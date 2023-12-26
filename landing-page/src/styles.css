@@ -1,0 +1,169 @@
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+   font-family: 'Roboto';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 10px;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+
+.main-image {
+    width: 600px;
+    height: 300px;
+}
+
+.main-description {
+    padding-bottom: 15px;
+}
+.card-image {
+    width: 100px;
+    height: 60px;
+}
+
+.portal-cards {
+    display: flex;
+}
+
+#card-title-text {
+    font-weight: bolder;
+}
+
+.section#main-title {
+    background-color: #1f2937
+}
+
+.section {
+    color: #f9faf8;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#main {
+    padding-top: 80px;
+    background-color: #1f2937;
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+#card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#card-title-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
+    padding-bottom: 40px;
+}
+
+.portal-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.card-image {
+    border-radius: 6px;
+    height: 200px;
+    width: 220px;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #1f2937;
+    text-align: center;
+}
+
+.sign-up {
+    width: 120px;
+    height: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #3882f6;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#quote-section {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    word-wrap: normal;
+    display: flex;
+}
+
+#quote-box {
+    font-style: italic;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: normal;
+    display: flex;
+}
+
+#quoter {
+    color: black;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+#footer {
+    background-color: white;
+}
