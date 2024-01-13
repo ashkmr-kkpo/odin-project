@@ -53,6 +53,7 @@ function sliderListener()
 function blackSet()
 {
     colorToSet = 'black'
+    rainbowMode = false
 }
 
 function rainbowSet() {
