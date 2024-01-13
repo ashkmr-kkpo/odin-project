@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+#header {
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lawngreen;
+}
+
+
+#button-options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.butt {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grid {
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.cell {
+    margin: 0;
+    padding: 0;
+}
+
+#circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border: 1px solid black;
+}
