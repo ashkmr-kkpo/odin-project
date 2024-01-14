@@ -19,12 +19,18 @@ numArray.forEach(numCell => {
 
 function clickNum(numVal)
 {
+
+
     if (displ.innerText == 0 || postOpAdded)
     {
         prevNum = Number(displ.innerText)
         displ.innerText = numVal.innerText 
         postOpAdded = false
     } else {
+        if (displ.innerText.length > 14)
+        {
+            return
+        }
         displ.innerText = displ.innerText + numVal.innerText 
     }
 }
@@ -67,7 +73,7 @@ function applyPreviousOp()
             retVal = prevNum * currVal
             break
     }
-
+    retVal.toFixed(15)
     displ.innerText = retVal
     prevNum = ""
     prevOp = ""

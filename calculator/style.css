@@ -67,10 +67,15 @@ body {
     width: 20%;
     height: 80px;
 }
+
 .celldisplay {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     border: 2px solid black;
     font-size: larger;
+}
+
+.celldisplay:mousedown {
+    background-color: darkgray;
 }
