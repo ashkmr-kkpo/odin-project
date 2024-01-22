@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url('Norsebold.otf')
+}
+  
+
 body {
     padding: 0;
     margin: 0;
@@ -9,13 +15,36 @@ body {
 }
 
 .splash {
+    position: relative;
     display: flex;
-    flex: auto;
     overflow: clip;
     min-width: 300px;
     max-width: 35%;
-
 }
+
+#banner {
+    position: absolute;
+    height: 100px;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    top: 20%;
+    padding: 20px;
+}
+
+#banner > h1 {
+    color: white;
+    font-family: 'Norse Bold';
+    font-size: 5rem;
+}
+
+#odin-img {
+    height: 100px;
+}
+
 
 .login-section {
     display: flex;
@@ -56,7 +85,7 @@ input {
 
 #header-text {
     margin-top: 200px;
-    width: 30rem;
+    width: 35rem;
 }
 
 .content-left-margin {
@@ -73,7 +102,7 @@ input {
     border-radius: 10px;
     border: none;
     font-weight: bold;
-    padding: 15px 40px 15px 40px;
+    padding: 12px 36px 12px 36px;
 }
 
 #login-section > div {
