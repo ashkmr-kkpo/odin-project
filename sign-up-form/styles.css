@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+}
+
+.splash {
+    display: flex;
+    flex: auto;
+    overflow: clip;
+    min-width: 300px;
+    max-width: 35%;
+
+}
+
+.login-section {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    gap: 2rem;
+}
+
+.inp-single {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.inp-label {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+#form-section {
+    box-shadow: 0.1em 0.1em 0.3em -2px gray;
+    padding-bottom: 30px;
+}
+
+#header-text {
+    margin-top: 200px;
+    width: 30rem;
+}
+
+.content-left-margin {
+    margin-left: 50px;
+}
+
+#login-section {
+    margin-top: 50px;
+}
+
+#login-section > button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 15px 40px 15px 40px;
+}
+
+#login-section > div {
+    margin-top: 30px;
+    font-weight: 500;
+}
