@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+#main {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    color: orange
+}
+
+#title {
+    flex-grow: 1;
+    display: flex;
+    flex:auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grid-body {
+    flex-grow: 6;    
+    display: grid;
+}
+
+#grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(3, minmax(100px, 200px));
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.tic {
+    min-width: 100px;
+    display: flex;
+    background-color: lightcoral;
+    border-color: black;
+    border-width: 1.5px;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: blue;
+}
