@@ -1,7 +1,5 @@
 import _ from 'lodash';
 import myName from './myName';
-import './style.css';
-import Icon from './icon.png';
 import printMe from './print.js';
 
 function component() {
@@ -16,11 +14,6 @@ function component() {
     btn.onclick = printMe;
   
     element.appendChild(btn);
-    // Add the image to our existing div.
-    const myIcon = new Image();
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon);
     return element;
   }
   
