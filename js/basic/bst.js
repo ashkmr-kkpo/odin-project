@@ -131,15 +131,6 @@ class Tree {
     this.inorder(root.right, callback);
   }
 
-  inorderPush(root, array) {
-    if (root == null) {
-      return;
-    }
-    this.inorderPush(root.left, array);
-    array.push(root.data);
-    this.inorderPush(root.right, array);
-  }
-
   levelOrder(callback = () => {}) {
     let visitingStack = [this.root];
     while (visitingStack.length > 0) {
@@ -185,8 +176,12 @@ class Tree {
 
   rebalance() {
     let sortedTree = [];
-    this.inorderPush(this.root, sortedTree);
+    function appendToVisited(node) {
+      sortedTree.push(node);
+    }
+    this.inorder(this.root, appendToVisited);
     console.log(sortedTree);
+
     let newRoot = Tree.buildTree(sortedTree);
     this.root = newRoot;
   }
