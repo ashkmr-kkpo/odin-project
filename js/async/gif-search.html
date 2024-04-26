@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GIF searcher</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Search..">
+    <button onclick="search()" type="submit">Submit</button>
+    <img src="#">
+    <script>
+        function search() {
+            const img = document.querySelector('img');
+            const search = document.querySelector('input')
+            let query = "https://api.giphy.com/v1/gifs/translate?api_key=<key>="
+            query = query + search.value
+            fetch(query, { mode: 'cors' })
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (response) {
+                    img.src = response.data.images.original.url;
+                });
+        }
+    </script>
+</body>
+
+</html>
