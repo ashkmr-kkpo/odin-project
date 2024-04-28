@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather-app.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>weather</h1>
+        <div id="search-bar">
+            <input type="text" placeholder="Search..">
+            <button onclick="search()" type="submit">Submit</button>
+        </div>
+        <div class="display">
+            <div class="entry">
+                <p class="desc">Location</p>
+                <p class="val" id="loc-val"></p>
+            </div>
+            <div class="entry">
+                <p class="desc">Temperature ˚C</p>
+                <p class="val" id="temp-c-val"></p>
+            </div>
+
+            <div class="entry">
+                <p class="desc">Feels like ˚C</p>
+                <p class="val" id="temp-c-feels-val"></p>
+            </div>
+
+            <div class="entry">
+                <p class="desc">Humidity</p>
+                <p class="val" id="humid-val"></p>
+            </div>
+
+            <div class="entry">
+                <p class="desc">Cloud</p>
+                <p class="val" id="cloud-val"></p>
+            </div>
+
+            <div class="entry">
+                <p class="desc">Rain</p>
+                <p class="val" id="rain-val"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
