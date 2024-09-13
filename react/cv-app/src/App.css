@@ -1,10 +1,11 @@
 #root {
   min-height: 100vh;
-  margin: 0;
   display: grid;
-  font-family: "Poppins";
-
   grid-template-columns: 1fr 1fr;
+}
+
+.displ {
+  font-family: "Poppins";
 }
 
 .poppins-regular {
@@ -29,16 +30,24 @@
   grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
 }
 
+.inp {
+  position: relative;
+}
+
 .sec {
   display: flex;
+  flex: auto;
   flex-direction: row;
   row-gap: 15px;
   column-gap: 15px;
 }
 
-#cv-title {
-  align-self: center;
+.cv-title {
   text-align: center;
+}
+
+.dateInp {
+  flex-shrink: 2;
 }
 
 #cv-body {
@@ -46,6 +55,29 @@
 }
 #cv-cont {
   display: flex;
-  flex:auto;
+  flex-direction: column;
+  flex: auto;
+}
+
+.exp-sec {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+}
+
+.expTop {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.placeLoc {
+  display: flex;
   justify-content: space-between;
+}
+
+.exp {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
 }
