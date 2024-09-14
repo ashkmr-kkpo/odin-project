@@ -77,7 +77,19 @@
 }
 
 .exp {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 30%;
   display: flex;
   flex: auto;
   flex-direction: column;
+  row-gap: 1rem;
+}
+
+
+.expDisplay {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+
 }
