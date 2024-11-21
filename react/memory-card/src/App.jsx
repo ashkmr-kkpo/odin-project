@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react'
 import pep1 from './assets/pep1.png'
 import weirdpizza from './assets/weirdpizza.png'
 import italian from './assets/italian.avif'
-
+import cheese from './assets/cheese-png.png'
 import './App.css'
 
 function App() {
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState(-1);
-  let images = [pep1, weirdpizza, italian];
+  let images = [pep1, weirdpizza, italian, cheese];
   let imageKeys = [];
   let isUsed = new Array(images.length).fill(0);
   let randomOrderImages = [];
